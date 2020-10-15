@@ -1,7 +1,11 @@
 #include <stdio.h>
 int main(){
 	//main function integers
-	int a,b,c,volume;
+	int a,b,c,volume,name,password;
+	password=1234;
+	printf("Enter your safe number:  ");
+	scanf("%d",&name);
+	if(name==password){
 	printf("Enter Lenght\n");
 	scanf("%d",&a);/*user imput*/
 	printf("Enter Width \n");
@@ -23,6 +27,11 @@ int main(){
 	
 	//summation of the two numbers
 	volume=a*b*c;
-	printf("The volume = %d cubic centimetre \n",volume);
+	printf("The volume = %d cubic centimetre \n",volume);		
+	}
+	if(name!=password){
+	printf("YOU ARE NOT THE USER !!!!!!!!!!!!!!!!!!!!!!!!!\n");
+	printf("<<<<<<<<<<<<<TRY AGAIN LATER>>>>>>>>>>\n");
+}
 	return 0;
 }
